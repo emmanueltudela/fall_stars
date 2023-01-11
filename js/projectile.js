@@ -5,6 +5,8 @@ class Projectile {
 
         this.acceleration_x = 0;
         this.acceleration_y = 0;
+
+        thrower.throwed++;
     }
 
     update() {
