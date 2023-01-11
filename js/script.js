@@ -2,7 +2,8 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
 const enemies = [];
-enemies.push(new Enemy(10, 10));
+enemies.push(new Enemy(0, 235, 100, 0, "right"));
+enemies.push(new Enemy(630, 235, 100, 0, "left"));
 
 const framerate = 60;
 const interval = 1000 / framerate;

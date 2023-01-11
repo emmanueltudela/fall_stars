@@ -1,9 +1,15 @@
 class Enemy {
-    constructor(x, y, hp, defense) {
+    constructor(x, y, hp, defense, dir) {
         this.x = x;
         this.y = y;
 
         this.acceleration_x = 0;
+
+        if (dir == "left") {
+            this.acceleration_x = -1;
+        } else if (dir == "right") {
+            this.acceleration_x = 1;
+        }
 
         this.alive = true;
         this.hp = hp;
