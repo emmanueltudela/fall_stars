@@ -23,7 +23,8 @@ function draw() {
         // Mise a jour des objets
 
         for (let i = enemies.length - 1; i >= 0; i--) {
-            if (!enemies[i].update()) {
+            enemies[i].update();
+            if (!enemies[i].alive) {
                 enemies.splice(i, 1);
             }
         }
