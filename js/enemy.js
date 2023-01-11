@@ -1,9 +1,11 @@
 class Enemy {
-    constructor(x, y) {
+    constructor(x, y, hp, defense) {
         this.x = x;
         this.y = y;
-
         this.acceleration_y = 0;
+
+        this.hp = hp;
+        this.defense = defense;
     }
 
     update() {
