@@ -7,15 +7,13 @@ let now;
 let then = Date.now();
 let delta;
 
-function draw()
-{
+function draw() {
     requestAnimationFrame(draw);
 
     now = Date.now();
     delta = now - then;
 
-    if (delta > interval)
-    {
+    if (delta > interval) {
         then = now - (delta % interval);
 
         // Dessinez ici
