@@ -1,5 +1,5 @@
 class Arrow extends Projectile {
-	constructor(x, y) {
-		super(x, y);
-	}
+    constructor(x, y, thrower) {
+        super(x, y, thrower);
+    }
 }

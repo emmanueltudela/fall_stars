@@ -1,5 +1,5 @@
 class Projectile {
-    constructor(x, y) {
+    constructor(x, y, thrower) {
         this.x = x;
         this.y = y;
 
