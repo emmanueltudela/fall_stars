@@ -4,7 +4,7 @@ class Tower {
         this.y = 0;
 
         this.hp = hp;
-        this.defense = defense;
+        this.defense = defense * 2;
     }
 
     update() {
