@@ -6,9 +6,9 @@ class Enemy {
         this.acceleration_x = 0;
 
         if (dir == "left") {
-            this.acceleration_x = -1;
+            this.acceleration_x = -2;
         } else if (dir == "right") {
-            this.acceleration_x = 1;
+            this.acceleration_x = 2;
         }
 
         this.alive = true;
